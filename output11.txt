@@ -1,0 +1,391 @@
+-- ARRIVAL event for process 0 at time 10 ms
+
+Process 0 starts at time 10 ms
+
+-- Process 0 requests a core at time 10 ms for 100 ms
+-- Process 0 will release a core at time 110 ms
+-- ARRIVAL event for process 1 at time 20 ms
+
+Process 1 starts at time 20 ms
+Process 0 is RUNNING
+
+-- Process 1 requests a core at time 20 ms for 45 ms
+-- Process 1 will release a core at time 65 ms
+-- ARRIVAL event for process 2 at time 50 ms
+
+Process 2 starts at time 50 ms
+Process 0 is RUNNING
+Process 1 is RUNNING
+
+-- Process 2 requests a core at time 50 ms for 40 ms
+-- Process 2 must wait for a core
+-- Ready queue now contains 1 process(es) waiting for a core
+-- ARRIVAL event for process 3 at time 60 ms
+
+Process 3 starts at time 60 ms
+Process 0 is RUNNING
+Process 1 is RUNNING
+Process 2 is READY
+
+-- Process 3 requests a core at time 60 ms for 40 ms
+-- Process 3 must wait for a core
+-- Ready queue now contains 2 process(es) waiting for a core
+-- CORE completion event for process 1 at time 65 ms
+-- Process 2 will release a core at time 105 ms
+-- Process 1 requests SSD access at time 65 ms for 1 ms
+-- Process 1 will release the SSD at time 66 ms
+-- SSD completion event for process 1 at time 66 ms
+-- Process 1 requests a core at time 66 ms for 100 ms
+-- Process 1 must wait for a core
+-- Ready queue now contains 2 process(es) waiting for a core
+-- ARRIVAL event for process 4 at time 80 ms
+
+Process 4 starts at time 80 ms
+Process 0 is RUNNING
+Process 1 is READY
+Process 2 is RUNNING
+Process 3 is READY
+
+-- Process 4 requests a core at time 80 ms for 40 ms
+-- Process 4 must wait for a core
+-- Ready queue now contains 3 process(es) waiting for a core
+-- CORE completion event for process 2 at time 105 ms
+-- Process 3 will release a core at time 145 ms
+-- Process 2 requests SSD access at time 105 ms for 1 ms
+-- Process 2 will release the SSD at time 106 ms
+-- SSD completion event for process 2 at time 106 ms
+-- Process 2 requests a core at time 106 ms for 100 ms
+-- Process 2 must wait for a core
+-- Ready queue now contains 3 process(es) waiting for a core
+-- CORE completion event for process 0 at time 110 ms
+-- Process 1 will release a core at time 210 ms
+-- Process 0 requests input from user at time 110 ms for 5000 ms
+-- Process 0 starts input at time 110 ms
+-- Process 0 will complete input at time 5110 ms
+-- CORE completion event for process 3 at time 145 ms
+-- Process 4 will release a core at time 185 ms
+-- Process 3 requests SSD access at time 145 ms for 1 ms
+-- Process 3 will release the SSD at time 146 ms
+-- SSD completion event for process 3 at time 146 ms
+-- Process 3 requests a core at time 146 ms for 100 ms
+-- Process 3 must wait for a core
+-- Ready queue now contains 2 process(es) waiting for a core
+-- CORE completion event for process 4 at time 185 ms
+-- Process 2 will release a core at time 285 ms
+-- Process 4 requests SSD access at time 185 ms for 1 ms
+-- Process 4 will release the SSD at time 186 ms
+-- SSD completion event for process 4 at time 186 ms
+-- Process 4 requests a core at time 186 ms for 100 ms
+-- Process 4 must wait for a core
+-- Ready queue now contains 2 process(es) waiting for a core
+-- CORE completion event for process 1 at time 210 ms
+-- Process 3 will release a core at time 310 ms
+-- Process 1 requests SSD access at time 210 ms for 1 ms
+-- Process 1 will release the SSD at time 211 ms
+-- SSD completion event for process 1 at time 211 ms
+-- Process 1 requests a core at time 211 ms for 200 ms
+-- Process 1 must wait for a core
+-- Ready queue now contains 2 process(es) waiting for a core
+-- CORE completion event for process 2 at time 285 ms
+-- Process 4 will release a core at time 385 ms
+-- Process 2 requests SSD access at time 285 ms for 1 ms
+-- Process 2 will release the SSD at time 286 ms
+-- SSD completion event for process 2 at time 286 ms
+-- Process 2 requests a core at time 286 ms for 200 ms
+-- Process 2 must wait for a core
+-- Ready queue now contains 2 process(es) waiting for a core
+-- CORE completion event for process 3 at time 310 ms
+-- Process 1 will release a core at time 510 ms
+-- Process 3 requests SSD access at time 310 ms for 1 ms
+-- Process 3 will release the SSD at time 311 ms
+-- SSD completion event for process 3 at time 311 ms
+-- Process 3 requests a core at time 311 ms for 200 ms
+-- Process 3 must wait for a core
+-- Ready queue now contains 2 process(es) waiting for a core
+-- CORE completion event for process 4 at time 385 ms
+-- Process 2 will release a core at time 585 ms
+-- Process 4 requests SSD access at time 385 ms for 1 ms
+-- Process 4 will release the SSD at time 386 ms
+-- SSD completion event for process 4 at time 386 ms
+-- Process 4 requests a core at time 386 ms for 200 ms
+-- Process 4 must wait for a core
+-- Ready queue now contains 2 process(es) waiting for a core
+-- CORE completion event for process 1 at time 510 ms
+-- Process 3 will release a core at time 710 ms
+-- Process 1 requests SSD access at time 510 ms for 1 ms
+-- Process 1 will release the SSD at time 511 ms
+-- SSD completion event for process 1 at time 511 ms
+-- Process 1 requests a core at time 511 ms for 50 ms
+-- Process 1 must wait for a core
+-- Ready queue now contains 2 process(es) waiting for a core
+-- CORE completion event for process 2 at time 585 ms
+-- Process 4 will release a core at time 785 ms
+-- Process 2 requests SSD access at time 585 ms for 1 ms
+-- Process 2 will release the SSD at time 586 ms
+-- SSD completion event for process 2 at time 586 ms
+-- Process 2 requests a core at time 586 ms for 50 ms
+-- Process 2 must wait for a core
+-- Ready queue now contains 2 process(es) waiting for a core
+-- CORE completion event for process 3 at time 710 ms
+-- Process 1 will release a core at time 760 ms
+-- Process 3 requests SSD access at time 710 ms for 1 ms
+-- Process 3 will release the SSD at time 711 ms
+-- SSD completion event for process 3 at time 711 ms
+-- Process 3 requests a core at time 711 ms for 50 ms
+-- Process 3 must wait for a core
+-- Ready queue now contains 2 process(es) waiting for a core
+-- CORE completion event for process 1 at time 760 ms
+-- Process 2 will release a core at time 810 ms
+-- Process 1 requests input from user at time 760 ms for 5000 ms
+-- Process 1 must wait for user
+-- Input queue now contains 1 process(es) waiting for the user
+-- CORE completion event for process 4 at time 785 ms
+-- Process 3 will release a core at time 835 ms
+-- Process 4 requests SSD access at time 785 ms for 1 ms
+-- Process 4 will release the SSD at time 786 ms
+-- SSD completion event for process 4 at time 786 ms
+-- Process 4 requests a core at time 786 ms for 50 ms
+-- Process 4 must wait for a core
+-- Ready queue now contains 1 process(es) waiting for a core
+-- CORE completion event for process 2 at time 810 ms
+-- Process 4 will release a core at time 860 ms
+-- Process 2 requests input from user at time 810 ms for 5000 ms
+-- Process 2 must wait for user
+-- Input queue now contains 2 process(es) waiting for the user
+-- CORE completion event for process 3 at time 835 ms
+-- Process 3 requests input from user at time 835 ms for 5000 ms
+-- Process 3 must wait for user
+-- Input queue now contains 3 process(es) waiting for the user
+-- CORE completion event for process 4 at time 860 ms
+-- Process 4 requests input from user at time 860 ms for 1000 ms
+-- Process 4 must wait for user
+-- Input queue now contains 4 process(es) waiting for the user
+-- INPUT completion event for process 0 at time 5110 ms
+-- Process 1 will complete input at time 10110 ms
+-- Process 0 requests a core at time 5110 ms for 100 ms
+-- Process 0 will release a core at time 5210 ms
+-- CORE completion event for process 0 at time 5210 ms
+-- Process 0 requests SSD access at time 5210 ms for 1 ms
+-- Process 0 will release the SSD at time 5211 ms
+-- SSD completion event for process 0 at time 5211 ms
+-- Process 0 requests a core at time 5211 ms for 80 ms
+-- Process 0 will release a core at time 5291 ms
+-- CORE completion event for process 0 at time 5291 ms
+-- Process 0 requests SSD access at time 5291 ms for 1 ms
+-- Process 0 will release the SSD at time 5292 ms
+-- SSD completion event for process 0 at time 5292 ms
+-- Process 0 requests a core at time 5292 ms for 100 ms
+-- Process 0 will release a core at time 5392 ms
+-- CORE completion event for process 0 at time 5392 ms
+-- Process 0 requests SSD access at time 5392 ms for 1 ms
+-- Process 0 will release the SSD at time 5393 ms
+-- SSD completion event for process 0 at time 5393 ms
+-- Process 0 requests a core at time 5393 ms for 80 ms
+-- Process 0 will release a core at time 5473 ms
+-- CORE completion event for process 0 at time 5473 ms
+-- Process 0 requests SSD access at time 5473 ms for 1 ms
+-- Process 0 will release the SSD at time 5474 ms
+-- SSD completion event for process 0 at time 5474 ms
+-- Process 0 requests a core at time 5474 ms for 30 ms
+-- Process 0 will release a core at time 5504 ms
+-- CORE completion event for process 0 at time 5504 ms
+-- Process 0 requests SSD access at time 5504 ms for 1 ms
+-- Process 0 will release the SSD at time 5505 ms
+-- SSD completion event for process 0 at time 5505 ms
+-- Process 0 requests a core at time 5505 ms for 20 ms
+-- Process 0 will release a core at time 5525 ms
+-- CORE completion event for process 0 at time 5525 ms
+-- Process 0 requests SSD access at time 5525 ms for 1 ms
+-- Process 0 will release the SSD at time 5526 ms
+-- SSD completion event for process 0 at time 5526 ms
+-- Process 0 requests a core at time 5526 ms for 80 ms
+-- Process 0 will release a core at time 5606 ms
+-- CORE completion event for process 0 at time 5606 ms
+-- Process 0 requests SSD access at time 5606 ms for 1 ms
+-- Process 0 will release the SSD at time 5607 ms
+-- SSD completion event for process 0 at time 5607 ms
+-- Process 0 requests a core at time 5607 ms for 40 ms
+-- Process 0 will release a core at time 5647 ms
+-- CORE completion event for process 0 at time 5647 ms
+-- Process 0 requests SSD access at time 5647 ms for 1 ms
+-- Process 0 will release the SSD at time 5648 ms
+-- SSD completion event for process 0 at time 5648 ms
+-- Process 0 requests a core at time 5648 ms for 20 ms
+-- Process 0 will release a core at time 5668 ms
+-- CORE completion event for process 0 at time 5668 ms
+
+Process 0 terminates at time 5668 ms
+Process 0 is TERMINATED
+Process 1 is BLOCKED
+Process 2 is BLOCKED
+Process 3 is BLOCKED
+Process 4 is BLOCKED
+
+-- INPUT completion event for process 1 at time 10110 ms
+-- Process 2 will complete input at time 15110 ms
+-- Process 1 requests a core at time 10110 ms for 100 ms
+-- Process 1 will release a core at time 10210 ms
+-- CORE completion event for process 1 at time 10210 ms
+-- Process 1 requests SSD access at time 10210 ms for 1 ms
+-- Process 1 will release the SSD at time 10211 ms
+-- SSD completion event for process 1 at time 10211 ms
+-- Process 1 requests a core at time 10211 ms for 80 ms
+-- Process 1 will release a core at time 10291 ms
+-- CORE completion event for process 1 at time 10291 ms
+-- Process 1 requests SSD access at time 10291 ms for 1 ms
+-- Process 1 will release the SSD at time 10292 ms
+-- SSD completion event for process 1 at time 10292 ms
+-- Process 1 requests a core at time 10292 ms for 100 ms
+-- Process 1 will release a core at time 10392 ms
+-- CORE completion event for process 1 at time 10392 ms
+-- Process 1 requests SSD access at time 10392 ms for 1 ms
+-- Process 1 will release the SSD at time 10393 ms
+-- SSD completion event for process 1 at time 10393 ms
+-- Process 1 requests a core at time 10393 ms for 80 ms
+-- Process 1 will release a core at time 10473 ms
+-- CORE completion event for process 1 at time 10473 ms
+-- Process 1 requests SSD access at time 10473 ms for 1 ms
+-- Process 1 will release the SSD at time 10474 ms
+-- SSD completion event for process 1 at time 10474 ms
+-- Process 1 requests a core at time 10474 ms for 100 ms
+-- Process 1 will release a core at time 10574 ms
+-- CORE completion event for process 1 at time 10574 ms
+-- Process 1 requests SSD access at time 10574 ms for 1 ms
+-- Process 1 will release the SSD at time 10575 ms
+-- SSD completion event for process 1 at time 10575 ms
+-- Process 1 requests a core at time 10575 ms for 40 ms
+-- Process 1 will release a core at time 10615 ms
+-- CORE completion event for process 1 at time 10615 ms
+
+Process 1 terminates at time 10615 ms
+Process 1 is TERMINATED
+Process 2 is BLOCKED
+Process 3 is BLOCKED
+Process 4 is BLOCKED
+
+-- INPUT completion event for process 2 at time 15110 ms
+-- Process 3 will complete input at time 20110 ms
+-- Process 2 requests a core at time 15110 ms for 100 ms
+-- Process 2 will release a core at time 15210 ms
+-- CORE completion event for process 2 at time 15210 ms
+-- Process 2 requests SSD access at time 15210 ms for 1 ms
+-- Process 2 will release the SSD at time 15211 ms
+-- SSD completion event for process 2 at time 15211 ms
+-- Process 2 requests a core at time 15211 ms for 80 ms
+-- Process 2 will release a core at time 15291 ms
+-- CORE completion event for process 2 at time 15291 ms
+-- Process 2 requests SSD access at time 15291 ms for 1 ms
+-- Process 2 will release the SSD at time 15292 ms
+-- SSD completion event for process 2 at time 15292 ms
+-- Process 2 requests a core at time 15292 ms for 100 ms
+-- Process 2 will release a core at time 15392 ms
+-- CORE completion event for process 2 at time 15392 ms
+-- Process 2 requests SSD access at time 15392 ms for 1 ms
+-- Process 2 will release the SSD at time 15393 ms
+-- SSD completion event for process 2 at time 15393 ms
+-- Process 2 requests a core at time 15393 ms for 80 ms
+-- Process 2 will release a core at time 15473 ms
+-- CORE completion event for process 2 at time 15473 ms
+-- Process 2 requests SSD access at time 15473 ms for 1 ms
+-- Process 2 will release the SSD at time 15474 ms
+-- SSD completion event for process 2 at time 15474 ms
+-- Process 2 requests a core at time 15474 ms for 100 ms
+-- Process 2 will release a core at time 15574 ms
+-- CORE completion event for process 2 at time 15574 ms
+-- Process 2 requests SSD access at time 15574 ms for 1 ms
+-- Process 2 will release the SSD at time 15575 ms
+-- SSD completion event for process 2 at time 15575 ms
+-- Process 2 requests a core at time 15575 ms for 40 ms
+-- Process 2 will release a core at time 15615 ms
+-- CORE completion event for process 2 at time 15615 ms
+
+Process 2 terminates at time 15615 ms
+Process 2 is TERMINATED
+Process 3 is BLOCKED
+Process 4 is BLOCKED
+
+-- INPUT completion event for process 3 at time 20110 ms
+-- Process 4 will complete input at time 21110 ms
+-- Process 3 requests a core at time 20110 ms for 100 ms
+-- Process 3 will release a core at time 20210 ms
+-- CORE completion event for process 3 at time 20210 ms
+-- Process 3 requests SSD access at time 20210 ms for 1 ms
+-- Process 3 will release the SSD at time 20211 ms
+-- SSD completion event for process 3 at time 20211 ms
+-- Process 3 requests a core at time 20211 ms for 80 ms
+-- Process 3 will release a core at time 20291 ms
+-- CORE completion event for process 3 at time 20291 ms
+-- Process 3 requests SSD access at time 20291 ms for 1 ms
+-- Process 3 will release the SSD at time 20292 ms
+-- SSD completion event for process 3 at time 20292 ms
+-- Process 3 requests a core at time 20292 ms for 100 ms
+-- Process 3 will release a core at time 20392 ms
+-- CORE completion event for process 3 at time 20392 ms
+-- Process 3 requests SSD access at time 20392 ms for 1 ms
+-- Process 3 will release the SSD at time 20393 ms
+-- SSD completion event for process 3 at time 20393 ms
+-- Process 3 requests a core at time 20393 ms for 80 ms
+-- Process 3 will release a core at time 20473 ms
+-- CORE completion event for process 3 at time 20473 ms
+-- Process 3 requests SSD access at time 20473 ms for 1 ms
+-- Process 3 will release the SSD at time 20474 ms
+-- SSD completion event for process 3 at time 20474 ms
+-- Process 3 requests a core at time 20474 ms for 100 ms
+-- Process 3 will release a core at time 20574 ms
+-- CORE completion event for process 3 at time 20574 ms
+-- Process 3 requests SSD access at time 20574 ms for 1 ms
+-- Process 3 will release the SSD at time 20575 ms
+-- SSD completion event for process 3 at time 20575 ms
+-- Process 3 requests a core at time 20575 ms for 40 ms
+-- Process 3 will release a core at time 20615 ms
+-- CORE completion event for process 3 at time 20615 ms
+
+Process 3 terminates at time 20615 ms
+Process 3 is TERMINATED
+Process 4 is BLOCKED
+
+-- INPUT completion event for process 4 at time 21110 ms
+-- Process 4 requests a core at time 21110 ms for 100 ms
+-- Process 4 will release a core at time 21210 ms
+-- CORE completion event for process 4 at time 21210 ms
+-- Process 4 requests SSD access at time 21210 ms for 1 ms
+-- Process 4 will release the SSD at time 21211 ms
+-- SSD completion event for process 4 at time 21211 ms
+-- Process 4 requests a core at time 21211 ms for 80 ms
+-- Process 4 will release a core at time 21291 ms
+-- CORE completion event for process 4 at time 21291 ms
+-- Process 4 requests SSD access at time 21291 ms for 1 ms
+-- Process 4 will release the SSD at time 21292 ms
+-- SSD completion event for process 4 at time 21292 ms
+-- Process 4 requests a core at time 21292 ms for 100 ms
+-- Process 4 will release a core at time 21392 ms
+-- CORE completion event for process 4 at time 21392 ms
+-- Process 4 requests SSD access at time 21392 ms for 1 ms
+-- Process 4 will release the SSD at time 21393 ms
+-- SSD completion event for process 4 at time 21393 ms
+-- Process 4 requests a core at time 21393 ms for 80 ms
+-- Process 4 will release a core at time 21473 ms
+-- CORE completion event for process 4 at time 21473 ms
+-- Process 4 requests SSD access at time 21473 ms for 1 ms
+-- Process 4 will release the SSD at time 21474 ms
+-- SSD completion event for process 4 at time 21474 ms
+-- Process 4 requests a core at time 21474 ms for 100 ms
+-- Process 4 will release a core at time 21574 ms
+-- CORE completion event for process 4 at time 21574 ms
+-- Process 4 requests SSD access at time 21574 ms for 1 ms
+-- Process 4 will release the SSD at time 21575 ms
+-- SSD completion event for process 4 at time 21575 ms
+-- Process 4 requests a core at time 21575 ms for 40 ms
+-- Process 4 will release a core at time 21615 ms
+-- CORE completion event for process 4 at time 21615 ms
+
+Process 4 terminates at time 21615 ms
+Process 4 is TERMINATED
+
+SUMMARY:
+Number of processes that completed: 5
+Total number of SSD accesses: 40
+Average SSD access time: 1.00 ms
+Total elapsed time: 21615 ms
+Core utilization: 19.50 percent
+SSD utilization: 0.19 percent

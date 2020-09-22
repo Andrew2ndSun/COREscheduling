@@ -1,0 +1,52 @@
+Process 0 starts at time 10 ms
+
+Process 1 starts at time 20 ms
+Process 0 is RUNNING
+
+Process 2 starts at time 50 ms
+Process 0 is RUNNING
+Process 1 is RUNNING
+
+Process 3 starts at time 60 ms
+Process 0 is RUNNING
+Process 1 is RUNNING
+Process 2 is READY
+
+Process 4 starts at time 80 ms
+Process 0 is RUNNING
+Process 1 is READY
+Process 2 is RUNNING
+Process 3 is READY
+
+Process 0 terminates at time 5666 ms
+Process 0 is TERMINATED
+Process 1 is BLOCKED
+Process 2 is BLOCKED
+Process 3 is BLOCKED
+Process 4 is BLOCKED
+
+Process 1 terminates at time 10615 ms
+Process 1 is TERMINATED
+Process 2 is BLOCKED
+Process 3 is BLOCKED
+Process 4 is BLOCKED
+
+Process 2 terminates at time 15615 ms
+Process 2 is TERMINATED
+Process 3 is BLOCKED
+Process 4 is BLOCKED
+
+Process 3 terminates at time 20615 ms
+Process 3 is TERMINATED
+Process 4 is BLOCKED
+
+Process 4 terminates at time 21615 ms
+Process 4 is TERMINATED
+
+SUMMARY:
+Number of processes that completed: 5
+Total number of SSD accesses: 40
+Average SSD access time: 0.95 ms
+Total elapsed time: 21615 ms
+Core utilization: 19.48 percent
+SSD utilization: 0.18 percent
